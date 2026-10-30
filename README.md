@@ -3,6 +3,7 @@
 Retrieves the 100 nearest neighbours of a query molecule in the Enamine Liquid Stock collection, a set of 2,492,445 screening compounds indexed by Ersilia. Three learned embeddings are searched independently, namely CLAMP for bioactivity, SAND for 3D shape and Mol-JEPA for predicted biological context, and their rankings are fused into one list. Ersilia built the search with LazySim, which indexes each embedding with turbovec 4-bit quantization.
 
 This model was incorporated on 2026-10-27.
+Last packaged on 2026-10-30.
 
 ## Information
 ### Identifiers
@@ -43,12 +44,19 @@ _10 of 100 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Internal`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3pu0](https://hub.docker.com/r/ersiliaos/eos3pu0)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3pu0.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3pu0.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `2771`
 - **Environment Size (Mb):** `588`
+- **Image Size (Mb):** `3290.43`
 
+**Computational Performance (seconds):**
+- 10 inputs: `31.79`
+- 100 inputs: `35.15`
+- 10000 inputs: `951.26`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-sim](https://github.com/ersilia-os/lazy-sim)
