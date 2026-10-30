@@ -3,7 +3,7 @@ Slug: liquid-stock-similarity
 Status: In progress
 Title: Enamine Liquid Stock Similarity
 Description: Retrieves the 100 nearest neighbours of a query molecule in the 
-  Enamine Liquid Stock collection, a set of 2, 492, 445 screening compounds 
+  Enamine Liquid Stock collection, a set of 2,492,445 screening compounds 
   indexed by Ersilia. Three learned embeddings are searched independently, 
   namely CLAMP for bioactivity, SAND for 3D shape and Mol-JEPA for predicted 
   biological context, and their rankings are fused into one list. Ersilia built 
@@ -11,34 +11,27 @@ Description: Retrieves the 100 nearest neighbours of a query molecule in the
   quantization.
 Deployment:
   - Local
-  - Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization,
-  Projection, Similarity search, Generation
+Source: Local
+Source Type: Internal
+Task: Sampling
+Subtask: Similarity search
 Input:
   - Compound
 Input Dimension: 1
 Output:
-  - Value
-  - Score
   - Compound
-  - Text
-Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: The output of this template model should be interpreted like 
-  this.
+Output Dimension: 100
+Output Consistency: Fixed
+Interpretation: The 100 closest compounds in the Enamine Liquid Stock collection,
+  fused across the CLAMP, SAND and Mol-JEPA rankings.
 Tag:
   - Similarity
   - Embedding
 Biomedical Area:
-  - Biomedical Area 1
-  - Biomedical Area 2
+  - Any
 Target Organism:
-  - Target Organism 1
-  - Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+  - Any
+Publication Type: Other
 Publication Year: 2026
 Publication: https://github.com/ersilia-os/lazy-sim
 Source Code: https://github.com/ersilia-os/lazy-sim
