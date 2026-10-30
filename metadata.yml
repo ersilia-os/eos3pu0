@@ -22,8 +22,8 @@ Output:
   - Compound
 Output Dimension: 100
 Output Consistency: Fixed
-Interpretation: The 100 closest compounds in the Enamine Liquid Stock collection,
-  fused across the CLAMP, SAND and Mol-JEPA rankings.
+Interpretation: The 100 closest compounds in the Enamine Liquid Stock 
+  collection, fused across the CLAMP, SAND and Mol-JEPA rankings.
 Tag:
   - Similarity
   - Embedding
@@ -37,3 +37,4 @@ Publication: https://github.com/ersilia-os/lazy-sim
 Source Code: https://github.com/ersilia-os/lazy-sim
 License: Non-commercial
 Contributor: arnaucoma24
+Incorporation Date: '2026-10-27'
